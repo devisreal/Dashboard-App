@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.form-control{
+  @apply  block w-full appearance-none rounded-lg border-2 border-gray-300 px-2.5 pb-2.5 pt-4 font-mulish text-md font-medium text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0;
+} 
+
+.form-label{
+  @apply absolute top-2 left-1 z-10 origin-[0] -translate-y-4 scale-75 transform cursor-pointer bg-white px-2 font-mulish text-md font-medium text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 peer-focus:text-md peer-focus:font-bold peer-focus:text-blue-600
+}
+
+.login-btn{
+  @apply inline-block w-full rounded-lg bg-blue-500 px-5 py-3 font-poppins text-sm font-medium text-white shadow-md shadow-blue-200
+}
+
+.select-style{
+  @apply block w-full cursor-pointer rounded-lg border-2 border-gray-300 p-3 font-mulish text-md font-medium text-gray-900 focus:border-blue-600 outline-none ring-0
+}
+
+.group-icon {
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  box-shadow: -35px 35px 68px 0px rgba(202, 138, 4, 0.5),
+    inset 0px -0px 16px 0px rgba(202, 138, 4, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+.hat-icon {
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  box-shadow: -35px 35px 68px 0px rgba(56, 189, 248, 0.5),
+    inset 0px -0px 16px 0px rgba(56, 189, 248, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
