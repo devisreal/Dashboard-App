@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {  Form, Formik } from 'formik'
 import * as yup from 'yup'
 import { TextInput } from "../components/CustomFormFields";
 
 const Login = () => {
+
+  const navigate = useNavigate();
 
   return (
     <div className=" grid">
@@ -49,7 +51,7 @@ const Login = () => {
             onSubmit={(values, { setSubmitting }) => {
               setSubmitting(true)
               setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
+                navigate('/dashboard');
                 setSubmitting(false);
               }, 400);
             }}
